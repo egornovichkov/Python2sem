@@ -3,6 +3,7 @@ def calculate_expression(expression, values):
     output = []
     stack = []
 
+    
     for symb in expression:
         if symb.isalpha():
             output.append(str(values[symb]))
