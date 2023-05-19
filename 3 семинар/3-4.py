@@ -1,0 +1,10 @@
+from datetime import datetime
+y1 = int(input('Год:'))
+m1 = int(input('Месяц:'))
+d1 = int(input('День:'))
+y2 = int(input('Год:'))
+m2 = int(input('Месяц:'))
+d2 = int(input('День:'))
+date1 = datetime(y1, m1, d1)
+date2 = datetime(y2, m2, d2)
+print(abs(date1 - date2))
