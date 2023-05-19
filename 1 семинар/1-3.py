@@ -1,13 +1,12 @@
-def bracket_check(test_string):
+def bracket_check(string):
     brackets = []
 
-    for symb in test_string:
+    for symb in string:
         if symb == "(":
             brackets.append("(")
         elif symb == ")":
             if len(brackets) == 0 or brackets[-1] != "(":
                 print("NO")
-                return
             brackets.pop()
 
     if len(brackets) == 0:
